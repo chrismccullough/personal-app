@@ -1,0 +1,35 @@
+#References {
+    background-color: #2b2b2b;
+    margin-top: 70px;
+    min-height: 200px;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#References .header-column h2 span {
+    display: none;
+}
+
+#References .header-column h2 {
+    color: white;
+    font-size: 4em;
+    margin-top: 0;
+}
+
+#References blockquote {
+    color: #fff;
+
+}
+
+#References blockquote p {
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 48px;
+}
+
+#References blockquote cite {
+    color: #fff;
+    font-size: 1em;
+    line-height: 10px;
+}

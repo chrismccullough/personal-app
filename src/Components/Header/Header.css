@@ -1,16 +1,26 @@
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.Header {
+    background-color: #273547;
+    color: white;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+nav {
+    background-color: #333;
+    min-height: 40px;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 100;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    line-height: 32px;
+    padding: 8px 13px;
+    text-decoration: none;
 }
