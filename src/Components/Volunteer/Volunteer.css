@@ -1,0 +1,52 @@
+#Volunteer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#Volunteer .volunteer .header-column {
+    margin-top: 16px;
+}
+
+#Volunteer .volunteer .header-column h2 {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+#Volunteer .volunteer .header-column h2 span {
+    border-bottom: 3px solid #11abb0;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+#Volunteer .item {
+    border-bottom: 1px dotted #ddd;
+    padding: 25px 0;
+}
+
+#Volunteer .item .organization {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#Volunteer .item .organization a {
+    color: black;
+}
+
+#Volunteer .item .summary {
+    margin: 0;
+    font-size: .9em;
+}
+
+#Volunteer .item .date {
+    padding-left: 15px;
+}
+
+#Volunteer .item ul.responsibilities {
+    list-style-position: inside;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+#Volunteer .item ul.responsibilities li {
+    color: #333;
+    font-size: .85em;
+}

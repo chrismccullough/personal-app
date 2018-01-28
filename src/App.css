@@ -1,28 +1,54 @@
 .App {
-  text-align: center;
+    font-family: Brandon;
+    letter-spacing: 0.05em;
+    text-align: left;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+a, a:link, a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+a, a:hover, a:focus {
+    text-decoration: none;
+    color: #a4bbd7;
+    transition: color .3s ease-in-out;
 }
 
-.App-title {
-  font-size: 1.5em;
+body {
+    margin: 0;
+    font-size: 1em;
 }
 
-.App-intro {
-  font-size: large;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+nav ol, nav ul {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
 }
+
+ol, ul {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+
+section {
+    overflow: hidden;
+}
+
+::selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+@import url("CSS/Fonts.css");
