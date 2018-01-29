@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import VolunteerList from './VolunteerList';
-import Data from '../../Stores/volunteer';
+import Data from '../../../Stores/volunteer';
 import './Volunteer.css';
 
 class Volunteer extends Component {

@@ -1,11 +1,11 @@
 'use strict';
 
 import React, { Component } from 'react'
-import SkillsList from './SkillsList'
-import Data from '../../Stores/skills'
-import './Skills.css'
+import WorkList from './WorkList'
+import Data from '../../../Stores/work'
+import './Work.css'
 
-class Skills extends React.Component {
+class Work extends Component {
     constructor(props) {
         super(props);
         this.state = { data: [] };
@@ -13,21 +13,21 @@ class Skills extends React.Component {
 
     render() {
         return (
-            <section id="Skills">
-                <a name="skills"/>
-                <div class="row">
+            <section id="Work">
+                <a name="work"/>
+                <div class="row work">
                     <div class="columns two header-column">
-                        <h2><span>Skills</span></h2>
+                        <h2><span>Work</span></h2>
                     </div>
 
                     <div class="columns ten main-column">
-                        <SkillsList data={Data} />
+                        <WorkList data={Data} />
                     </div>
 
                 </div>
             </section>
-        );
+        )
     }
 }
 
-export default Skills;
+export default Work;
