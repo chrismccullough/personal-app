@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react'
 import EducationList from './EducationList'
-import Data from '../../Stores/education'
+import Data from '../../../Stores/education'
 import './Education.css'
 
 class Education extends Component {
