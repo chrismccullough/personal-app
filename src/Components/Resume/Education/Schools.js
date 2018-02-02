@@ -3,14 +3,15 @@ import School from './School'
 
 class Schools extends Component {
     render() {
-        const school = this.props.data.map(educationNode => {
-             return (
-                 <School School={ educationNode.School } Website={ educationNode.Website } Location={ educationNode.Location } StartDate={ educationNode.StartDate } EndDate={ educationNode.EndDate } Degree={ educationNode.Degree } Studies={ educationNode.Studies } />
-             )
-         })
          return (
              <p className="schools">
-                 { school }
+                 {
+                     this.props.data.map((school, index) => {
+                          return (
+                              <School key={index} School={ school.School } Website={ school.Website } Location={ school.Location } StartDate={ school.StartDate } EndDate={ school.EndDate } Degree={ school.Degree } Studies={ school.Studies } />
+                          )
+                     })
+                 }
              </p>
          )
      }

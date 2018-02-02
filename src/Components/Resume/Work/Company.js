@@ -3,17 +3,23 @@ import Role from './Role'
 
 class Company extends Component {
     render() {
-         const roles = this.props.Roles.map((role) =>
-            <Role Title={role.Title} StartDate={role.StartDate} EndDate={role.EndDate} Responsibilities={role.Responsibilities} />
-         );
-
         return (
             <div className="row item">
                 <div className="twelve columns company">
-                    <h3><a href={this.props.Website} target="_blank">{this.props.Company}</a></h3>
-                    <span> &bull; {this.props.Location}</span>
+                    <ul className="stats-tabs">
+                        <li>
+                            <h3><a href={this.props.Website} target="_blank">{this.props.Company}</a></h3>
+                        </li>
+                        <li>
+                            <span>{this.props.Location}</span>
+                        </li>
+                    </ul>
                     <p className="roles">
-                        {roles}
+                        {
+                            this.props.Roles.map((role, index) =>
+                               <Role key={index} Title={role.Title} StartDate={role.StartDate} EndDate={role.EndDate} Responsibilities={role.Responsibilities} />
+                            )
+                        }
                     </p>
                 </div>
             </div>

@@ -19,7 +19,7 @@ class Header extends Component {
                     <div className="banner-text">
                         <h1 className="responsive-headline">Chris McCullough</h1>
                         <h3>I am a <span>front end web developer</span> and <span>software engineer</span> based in Seattle, Washington.  I am passionate about developing standards-compliant web experiences using cutting edge languages and
-technologies; bringing my skills, experience, work ethic and thirst for learning to all new challenges and opportunities. Please <a class="smoothscroll" href="#about">start scrolling</a> to learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+technologies; bringing my skills, experience, work ethic and thirst for learning to all new challenges and opportunities. Please <a className="smoothscroll" href="#about">start scrolling</a> to learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
 
                         <hr />
 

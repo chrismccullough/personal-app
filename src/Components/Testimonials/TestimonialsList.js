@@ -1,15 +1,9 @@
 import React, { Component } from 'react'
-import TestimonialItem from './TestimonialItem'
+import Testimonial from './Testimonial'
 import Carousel from 'nuka-carousel'
 
 class TestimonialsList extends Component {
     render() {
-        let referenceNodes = this.props.data.map(referenceNode => {
-             return (
-                 <TestimonialItem key={ referenceNode.id } Reference={ referenceNode.Reference } Name={ referenceNode.Name } Title={ referenceNode.Title } />
-             )
-         })
-
          const carouselConfig = {
             autoplay: true,
             decorators: [],
@@ -27,7 +21,13 @@ class TestimonialsList extends Component {
                 framePadding={carouselConfig.framePadding}
                 swiping={carouselConfig.swiping}
                 wrapAround={carouselConfig.wrapAround}>
-                { referenceNodes }
+                {
+                    this.props.data.map((testimonial, index) => {
+                         return (
+                             <Testimonial key={index} Testimonial={ testimonial.Testimonial } Name={ testimonial.Name } Title={ testimonial.Title } />
+                         )
+                     })
+                }
              </Carousel>
          )
      }

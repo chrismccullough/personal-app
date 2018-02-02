@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class TestimonialItem extends Component {
+class Testimonial extends Component {
 
     render() {
         return (
             <li>
                 <blockquote>
                     <p>
-                        {this.props.Reference}
+                        {this.props.Testimonial}
                     </p>
                     <cite>
                         {this.props.Name} <span>&bull;</span> {this.props.Title}
@@ -18,4 +18,4 @@ class TestimonialItem extends Component {
     }
 }
 
-export default TestimonialItem;
+export default Testimonial;

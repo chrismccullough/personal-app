@@ -3,12 +3,28 @@ import React, { Component } from 'react'
 class School extends Component {
     render() {
         return (
-            <div className="row item">
-                <div className="twelve columns school">
-                    <h3><a href={this.props.Website} target="_blank" rel="noopener noreferrer">{this.props.School}</a></h3>
-                    <span> &bull; {this.props.Location}<br/></span>
+            <div className="row item school">
+                <div className="twelve columns">
+                    <ul className="stats-tabs">
+                        <li>
+                            <h3><a href={this.props.Website} target="_blank" rel="noopener noreferrer">{this.props.School}</a></h3>
+                        </li>
+                        <li>
+                            <span>{this.props.Location}</span>
+                        </li>
+                    </ul>
+
+
                     <p className="info">
-                        <h5>{this.props.Degree}</h5> &bull; <em className="date">{this.props.StartDate} - {this.props.EndDate}</em>
+                        <ul className="stats-tabs">
+                            <li>
+                                <h5>{this.props.Degree}</h5>
+                            </li>
+                            <li>
+                                <em className="date">{this.props.StartDate} - {this.props.EndDate}</em>
+                            </li>
+                        </ul>
+
                         <div className="studies">
                             {this.props.Studies}
                         </div>

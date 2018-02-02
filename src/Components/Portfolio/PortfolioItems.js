@@ -3,14 +3,15 @@ import PortfolioItem from './PortfolioItem'
 
 class PortfolioItems extends Component {
     render() {
-        let portfolioNodes = this.props.data.map(PortfolioNode => {
-             return (
-                 <PortfolioItem id={ PortfolioNode.id } thumbnail={ PortfolioNode.thumbnail } title={ PortfolioNode.title } tags={ PortfolioNode.tags } />
-             )
-         })
          return (
-             <div>
-                 { portfolioNodes }
+             <div className="PortfolioItems">
+                 {
+                     this.props.data.map((portfolioItem, index) => {
+                          return (
+                              <PortfolioItem key={index} thumbnail={ portfolioItem.thumbnail } title={ portfolioItem.title } tags={ portfolioItem.tags } />
+                          )
+                      })
+                 }
              </div>
          )
      }

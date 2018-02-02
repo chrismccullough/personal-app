@@ -4,20 +4,15 @@ import PortfolioModalItems from './PortfolioModalItems'
 import Data from '../../Stores/portfolio'
 
 class Portfolio extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { data: [] };
-    }
-
     render() {
         return (
             <section id="portfolio">
-                <div class="row">
-                    <div class="twelve columns collapsed">
+                <div className="row">
+                    <div className="twelve columns collapsed">
 
                         <h1>Portfolio</h1>
 
-                        <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+                        <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
                             <PortfolioItems data={Data} />
                         </div>
                     </div>

@@ -242,10 +242,17 @@ ul#nav li a.active { color: #F06000; }
    padding-bottom: 72px;
    overflow: hidden;
 }
-
 #resume a, #resume a:visited  { color: #11ABB0; }
 #resume a:hover, #resume a:focus { color: #313131; }
-
+#resume .stats-tabs {
+    margin: 0;
+}
+#resume .stats-tabs li {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
 #resume h2 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
@@ -261,12 +268,9 @@ ul#nav li a.active { color: #F06000; }
 }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
-
 #resume .work,
 #resume .education {
    margin-bottom: 48px;
-   padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
 }
 #resume .skills {
     margin-bottom: 48px;
@@ -277,8 +281,7 @@ ul#nav li a.active { color: #F06000; }
     display: inline-block;
 }
 #resume .roles {
-    border-bottom: 1px dotted #E8E8E8;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
@@ -296,8 +299,6 @@ ul#nav li a.active { color: #F06000; }
     margin-top: 5px;
 }
 #resume .education .school {
-    border-bottom: 1px dotted #E8E8E8;
-    margin-bottom: 20px;
     padding-bottom: 12px;
 }
 

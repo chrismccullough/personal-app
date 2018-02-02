@@ -2,20 +2,35 @@ import React, { Component } from 'react'
 
 class VolunteerItem extends Component {
     render() {
-        const volunteerNodes = this.props.Responsibilities.map(responsibility => {
-             return (
-                 <p>{ responsibility.Responsibility }</p>
-             )
-         })
-
         return (
-            <div class="row item">
+            <div class="row item volunteer">
                 <div class="twelve columns">
-                    <h3><a href={this.props.Website} target="_blank" rel="noopener noreferrer">{this.props.Organization} {this.props.Group}</a></h3>
-                    <span> &bull; {this.props.Location}<br/></span>
+                    <ul className="stats-tabs">
+                        <li>
+                            <h3><a href={this.props.Website} target="_blank" rel="noopener noreferrer">{this.props.Organization} {this.props.Group}</a></h3>
+                        </li>
+                        <li>
+                            <span>{this.props.Location}</span>
+                        </li>
+                    </ul>
+
+
                         <p class="info">
-                            <h5>{this.props.Title}</h5> <span>&bull;</span> <em class="date">{this.props.StartDate} - {this.props.EndDate}</em>
-                            {volunteerNodes}
+                            <ul className="stats-tabs">
+                                <li>
+                                    <h5>{this.props.Title}</h5>
+                                </li>
+                                <li>
+                                    <em class="date">{this.props.StartDate} - {this.props.EndDate}</em>
+                                </li>
+                            </ul>
+                            {
+                                this.props.Responsibilities.map((responsibility, index) => {
+                                     return (
+                                         <p key={index}>{ responsibility.Responsibility }</p>
+                                     )
+                                })
+                            }
                         </p>
                 </div>
             </div>

@@ -7,11 +7,11 @@ class Education extends Component {
         return (
             <div className="row education">
 
-                <div class="three columns header-col">
+                <div className="three columns header-col">
                    <h2><span>Education</span></h2>
                 </div>
 
-                <div class="nine columns main-col">
+                <div className="nine columns main-col">
                     <Schools data={Data} />
                 </div>
 

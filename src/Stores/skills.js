@@ -1,7 +1,6 @@
 const skillsData = [
     {
         Title: 'Front End Development',
-        Summary: '',
         Skills: [
             { Skill: "HTML5", Percentage: 90 },
             { Skill: "CSS3", Percentage: 95 },
@@ -13,7 +12,6 @@ const skillsData = [
 
     {
         Title: 'Tools & Software',
-        Summary: '',
         Skills: [
             { Skill: "SublimeText", Percentage: 90 },
             { Skill: "Atom", Percentage: 90 },
@@ -25,7 +23,6 @@ const skillsData = [
 
     {
         Title: 'JavaScript Frameworks & Libraries',
-        Summary: '',
         Skills: [
             { Skill: "ReactJS", Percentage: 80 },
             { Skill: "AngularJS", Percentage: 75 },
@@ -36,7 +33,6 @@ const skillsData = [
 
     {
         Title: 'Build and Orchestration Tools',
-        Summary: '',
         Skills: [
             { Skill: "Grunt", Percentage: 85 },
             { Skill: "Gulp", Percentage: 85 },

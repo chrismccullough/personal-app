@@ -3,11 +3,6 @@ import SkillsList from './SkillsList'
 import Data from '../../../Stores/skills'
 
 class Skills extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { data: [] };
-    }
-
     render() {
         return (
             <div className="row skills">

@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import SkillsItem from './SkillsItem';
+import Skill from './Skill';
 
 class SkillsList extends Component {
     render() {
-        let skillNodes = this.props.data.map(skillNode => {
-             return (
-                <SkillsItem key={ skillNode.id } Title={ skillNode.Title } Summary={ skillNode.Summary } Skills={ skillNode.Skills } />
-             )
-         })
          return (
              <div>
-                 { skillNodes }
+                 {
+                     this.props.data.map((skill, index) => {
+                          return (
+                             <Skill key={index} Title={ skill.Title } Skills={ skill.Skills } />
+                          )
+                     })
+                 }
              </div>
          )
      }

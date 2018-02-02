@@ -5,8 +5,8 @@ const volunteerData = [
         title: 'Coffee',
         description: 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         tags: [
-            { id: 1, tag: 'branding' },
-            { id: 2, tag: 'web design' }
+            { tag: 'branding' },
+            { tag: 'web design' }
         ]
     },
 
@@ -16,8 +16,8 @@ const volunteerData = [
         title: 'Console',
         description: 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         tags: [
-            { id: 1, tag: 'branding' },
-            { id: 2, tag: 'web development' }
+            { tag: 'branding' },
+            { tag: 'web development' }
         ]
     },
 
@@ -27,7 +27,7 @@ const volunteerData = [
         title: 'Juday',
         description: 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         tags: [
-            { id: 1, tag: 'branding' }
+            { tag: 'branding' }
         ]
     },
 
@@ -37,7 +37,7 @@ const volunteerData = [
         title: 'Into The Light',
         description: 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         tags: [
-            { id: 1, tag: 'photography' }
+            { tag: 'photography' }
         ]
     },
 
@@ -47,8 +47,8 @@ const volunteerData = [
         title: 'Farmer Boy',
         description: 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         tags: [
-            { id: 1, tag: 'branding' },
-            { id: 2, tag: 'web design' }
+            { tag: 'branding' },
+            { tag: 'web design' }
         ]
     },
 
@@ -58,7 +58,7 @@ const volunteerData = [
         title: 'Girl',
         description: 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         tags: [
-            { id: 1, tag: 'photography' }
+            { tag: 'photography' }
         ]
     },
 
@@ -68,8 +68,8 @@ const volunteerData = [
         title: 'Origami',
         description: 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         tags: [
-            { id: 1, tag: 'branding' },
-            { id: 2, tag: 'illustration' }
+            { tag: 'branding' },
+            { tag: 'illustration' }
         ]
     },
 
@@ -79,8 +79,8 @@ const volunteerData = [
         title: 'Retrocam',
         description: 'Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         tags: [
-            { id: 1, tag: 'web design' },
-            { id: 2, tag: 'photography' }
+            { tag: 'web design' },
+            { tag: 'photography' }
         ]
     }
 ];

@@ -3,11 +3,6 @@ import TestimonialsList from './TestimonialsList'
 import Data from '../../Stores/testimonials'
 
 class Testimonials extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { data: [] };
-    }
-
     render() {
         return (
             <section id="testimonials">
