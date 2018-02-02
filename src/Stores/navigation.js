@@ -11,10 +11,12 @@ const navData = [
         id: 3,
         Section: 'resume'
     },
+    /*
     {
         id: 4,
         Section: 'portfolio'
     },
+    */
     {
         id: 5,
         Section: 'testimonials'

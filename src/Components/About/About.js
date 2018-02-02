@@ -32,14 +32,13 @@ class About extends Component {
                                         11315 13th St. SE<br />
                                         Lake Stevens, WA 98258 US
                                     </span><br />
-                                    <span>(425)344-1255</span><br />
-                                    <span>cmccullough@gmail.com</span>
+                                    <span><a href="mailto:cmccullough@gmail.com">cmccullough@gmail.com</a></span>
                                 </p>
                         </div>
 
                         <div className="columns download">
                             <p>
-                                <a href="https://www.path-to-resume.com" className="button"><i className="fa fa-download"></i>Download Resume</a>
+                                <a href="http://chrismccullough.s3-website-us-west-2.amazonaws.com/resume.pdf" className="button"><i className="fa fa-download"></i>Download Resume</a>
                             </p>
                         </div>
                     </div>

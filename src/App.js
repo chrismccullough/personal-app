@@ -28,7 +28,6 @@ class App extends Component {
 
                 <About />
                 <Resume />
-                <Portfolio />
                 <Testimonials />
 
                 <Footer />
