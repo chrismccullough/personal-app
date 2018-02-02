@@ -1,24 +1,30 @@
 const navData = [
     {
         id: 1,
-        Name: 'Home',
+        Section: 'home'
     },
     {
         id: 2,
-        Name: 'About',
+        Section: 'about'
     },
     {
         id: 3,
-        Name: 'Resume',
+        Section: 'resume'
     },
+    {
+        id: 4,
+        Section: 'portfolio'
+    },
+    {
+        id: 5,
+        Section: 'testimonials'
+    }
+    /*
     {
         id: 6,
-        Name: 'Portfolio',
-    },
-    {
-        id: 7,
-        Name: 'References',
-    },
+        Section: 'contact'
+    }
+    */
 ];
 
 module.exports = navData;

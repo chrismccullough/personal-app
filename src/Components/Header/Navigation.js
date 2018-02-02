@@ -1,9 +1,6 @@
-'use strict';
-
 import React, { Component } from 'react'
 
-import * as Scroll from 'react-scroll';
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 class Navigation extends Component {
     render() {
@@ -11,9 +8,9 @@ class Navigation extends Component {
            spy: true,
            smooth: true,
            hashSpy: true,
-           offset: 50,
-           duration: 500,
-           delay: 1000,
+           offset: 0,
+           duration: 1000,
+           delay: 500,
            ignoreCancelEvents: false
         }
 
@@ -21,7 +18,7 @@ class Navigation extends Component {
              return (
                  <li>
                      <Link activeClass="active"
-                         to={navNode.Name}
+                         to={navNode.Section}
                          spy={navConfig.spy}
                          smooth={navConfig.smooth}
                          hashSpy={navConfig.hashSpy}
@@ -32,15 +29,18 @@ class Navigation extends Component {
                          onSetInactive={this.handleSetInactive}
                          ignoreCancelEvents={navConfig.ignoreCancelEvents}
                      >
-                       {navNode.Name}
+                       {navNode.Section}
                      </Link>
                  </li>
              )
          })
 
          return (
-             <nav>
-                 <ul>
+             <nav id="nav-wrap" className="opaque">
+                <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+                 <ul id="nav" className="nav">
                      {navNodes}
                  </ul>
              </nav>

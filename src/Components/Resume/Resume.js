@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { Component } from 'react'
 
 import Work from './Work/Work'
@@ -7,14 +5,14 @@ import Skills from './Skills/Skills'
 import Volunteer from './Volunteer/Volunteer'
 import Education from './Education/Education'
 
-class Resume extends React.Component {
+class Resume extends Component {
     render() {
         return (
-            <section id="Resume">
+            <section id="resume">
                 <Work />
                 <Skills />
-                <Volunteer />
                 <Education />
+                <Volunteer />
             </section>
         );
     }

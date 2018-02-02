@@ -1,30 +1,48 @@
 const skillsData = [
     {
-        id: 1,
-        Title: 'Programming Languages',
-        Summary: [
-            {id: 1, Content: "Some stuff..."},
-            {id: 2, Content: "Some more stuff..."},
-        ],
+        Title: 'Front End Development',
+        Summary: '',
         Skills: [
-            {id: 1, Skill: "HTML5", Percentage: 90},
-            {id: 1, Skill: "CSS3", Percentage: 50},
-            {id: 1, Skill: "JavaScript", Percentage: 80},
+            { Skill: "HTML5", Percentage: 90 },
+            { Skill: "CSS3", Percentage: 95 },
+            { Skill: "JavaScript", Percentage: 85 },
+            { Skill: "Photoshop", Percentage: 80 },
+            { Skill: "Wordpress", Percentage: 95 },
         ]
     },
 
     {
-        id: 2,
-        Title: 'Database Systems',
-        Summary: [
-            {id: 1, Content: "Some stuff..."},
-            {id: 2, Content: "Some more stuff..."},
-            {id: 3, Content: "Some more stuff..."}
-        ],
+        Title: 'Tools & Software',
+        Summary: '',
         Skills: [
-            {id: 1, Skill: "HTML5", Percentage: 90},
-            {id: 1, Skill: "CSS3", Percentage: 90},
-            {id: 1, Skill: "JavaScript", Percentage: 90},
+            { Skill: "SublimeText", Percentage: 90 },
+            { Skill: "Atom", Percentage: 90 },
+            { Skill: "Visual Studio", Percentage: 85 },
+            { Skill: "Adobe Photoshop", Percentage: 90 },
+            { Skill: "Atlassian Products (Jira, Confluence, Crucible, etc.)", Percentage: 95 },
+        ]
+    },
+
+    {
+        Title: 'JavaScript Frameworks & Libraries',
+        Summary: '',
+        Skills: [
+            { Skill: "ReactJS", Percentage: 80 },
+            { Skill: "AngularJS", Percentage: 75 },
+            { Skill: "Sproutcore", Percentage: 60 },
+            { Skill: "jQuery", Percentage: 85}
+        ]
+    },
+
+    {
+        Title: 'Build and Orchestration Tools',
+        Summary: '',
+        Skills: [
+            { Skill: "Grunt", Percentage: 85 },
+            { Skill: "Gulp", Percentage: 85 },
+            { Skill: "NPM / NodeJS", Percentage: 75 },
+            { Skill: "WebPack", Percentage: 75 },
+            { Skill: "Yarn", Percentage: 75 }
         ]
     }
 ];

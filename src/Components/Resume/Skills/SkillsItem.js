@@ -1,14 +1,7 @@
-'use strict';
+import React, { Component } from 'react'
 
-import React, { Compontent } from 'react';
-
-class SkillsItem extends React.Component {
+class SkillsItem extends Component {
     render() {
-        let summaryNodes = this.props.Summary.map(summary => {
-             return (
-                 <p class="summary">{ summary.Content }</p>
-             )
-        })
 
         let handleMouseEnter = function() {
             return false;
@@ -27,13 +20,13 @@ class SkillsItem extends React.Component {
          })
 
         return (
-            <div class="row item">
-                <div class="columns twelve">
-                    <h3 class="title">{this.props.Title}</h3>
-                    {summaryNodes}
+            <div className="row item">
+                <div className="columns twelve">
+                    <h3 className="title">{this.props.Title}</h3>
+                    <p>{this.props.Summary}</p>
 
-                    <div class="bars">
-                        <ul class="skills">
+                    <div className="bars">
+                        <ul className="skills">
                             {skillNodes}
                         </ul>
                     </div>

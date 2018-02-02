@@ -1,21 +1,22 @@
-'use strict';
-
 import React, { Component } from 'react'
 
 import fontawesome from '@fortawesome/fontawesome'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 import { faCheckSquare } from '@fortawesome/fontawesome-free-solid'
 
 import Header from './Components/Header/Header'
-import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import Resume from './Components/Resume/Resume'
-import Reference from './Components/References/References'
+import Portfolio from './Components/Portfolio/Portfolio'
+import Testimonials from './Components/Testimonials/Testimonials'
 import Footer from './Components/Footer/Footer'
 
 import './App.css'
-import './CSS/Grid.css'
+
+import './CSS/default.css'
+import './CSS/layout.css'
+import './CSS/media-queries.css'
+import './CSS/magnific-popup.css'
 
 fontawesome.library.add(brands, faCheckSquare)
 
@@ -25,10 +26,10 @@ class App extends Component {
             <div className="App">
                 <Header />
 
-                <Home />
                 <About />
                 <Resume />
-                <Reference />
+                <Portfolio />
+                <Testimonials />
 
                 <Footer />
             </div>

@@ -1,28 +1,42 @@
 const educationData = [
     {
-        id: 1,
         School: 'Western Washington University',
         Website: 'http://www.wwu.edu',
         Location: 'Bellingham, WA',
         StartDate: '1994',
         EndDate: '1997',
-        Studies: [
-            { id: 1, Study: 'Art' },
-            { id: 2, Study: 'Art History' },
-            { id: 3, Study: 'Philosophy' }
-        ]
+        Degree: 'Bachelor Studies',
+        Studies: 'Specialized in art, art history and philosophy courses'
     },
 
     {
-        id: 2,
+        School: 'Wenatchee Valley College',
+        Website: 'https://www.wvc.edu/',
+        Location: 'Wenatchee, WA',
+        StartDate: '1993',
+        EndDate: '1994',
+        Degree: 'Associate Studies',
+        Studies: 'Attended courses in sociology and philosophy'
+    },
+
+    {
+        School: 'Devry University',
+        Website: 'https://www.wvc.edu/',
+        Location: 'Phoenix, AZ',
+        StartDate: '1993',
+        EndDate: '1993',
+        Degree: 'Associate Studies',
+        Studies: 'Attended courses in business administration and economics'
+    },
+
+    {
         School: 'Lake Chelan High School',
         Website: 'https://www.chelanschools.org',
-        Location: 'Chelan, WA',
+        Location: 'Lake Chelan, WA',
         StartDate: '1990',
         EndDate: '1993',
-        Studies: [
-            { id: 1, Study: 'General Studies' }
-        ]
+        Degree: 'High Shool',
+        Studies: 'General Studies'
     }
 ];
 

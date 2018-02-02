@@ -7,7 +7,6 @@ const workData = [
         Title: 'Sr. Software Engineer',
         StartDate: 'April 2016',
         EndDate: 'January 2018',
-        Test: 'foo.com',
         Responsibilities: [
             { id: 1, Responsibility: 'Architectural design' },
             { id: 2, Responsibility: 'Feature prototyping' },

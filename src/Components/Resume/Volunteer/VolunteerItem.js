@@ -1,27 +1,22 @@
-'use strict';
+import React, { Component } from 'react'
 
-import React, { Compontent } from 'react'
-
-class VolunteerItem extends React.Component {
+class VolunteerItem extends Component {
     render() {
-        let volunteerNodes = this.props.Responsibilities.map(responsibility => {
+        const volunteerNodes = this.props.Responsibilities.map(responsibility => {
              return (
-                 <li>{ responsibility.Responsibility }</li>
+                 <p>{ responsibility.Responsibility }</p>
              )
          })
 
         return (
             <div class="row item">
-                <div class="columns twelve">
-                    <h3 class="organization"><a href={this.props.Website} target="_blank">{this.props.Group} - {this.props.Organization}</a></h3>
-                    <p class="summary">
-                        <span class="location">{this.props.Location}</span>
-                        <em class="date">{this.props.StartDate} - {this.props.EndDate}</em>
-                        <div class="title">{this.props.Title}</div>
-                    </p>
-                    <ul class="responsibilities">
-                        {volunteerNodes}
-                    </ul>
+                <div class="twelve columns">
+                    <h3><a href={this.props.Website} target="_blank" rel="noopener noreferrer">{this.props.Organization} {this.props.Group}</a></h3>
+                    <span> &bull; {this.props.Location}<br/></span>
+                        <p class="info">
+                            <h5>{this.props.Title}</h5> <span>&bull;</span> <em class="date">{this.props.StartDate} - {this.props.EndDate}</em>
+                            {volunteerNodes}
+                        </p>
                 </div>
             </div>
         );
