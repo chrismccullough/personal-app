@@ -8,7 +8,7 @@ class PortfolioItems extends Component {
                  {
                      this.props.data.map((portfolioItem, index) => {
                           return (
-                              <PortfolioItem key={index} thumbnail={ portfolioItem.thumbnail } title={ portfolioItem.title } tags={ portfolioItem.tags } />
+                              <PortfolioItem key={index} thumbnail={ portfolioItem.thumbnail } title={ portfolioItem.title } description={ portfolioItem.description } tags={ portfolioItem.tags } />
                           )
                       })
                  }

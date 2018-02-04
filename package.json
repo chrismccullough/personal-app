@@ -10,6 +10,7 @@
     "nuka-carousel": "^3.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-image-lightbox": "^4.5.0",
     "react-scripts": "1.1.0",
     "react-scroll": "^1.7.6",
     "verge": "^1.10.2"
