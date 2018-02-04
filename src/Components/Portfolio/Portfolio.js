@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PortfolioItems from './PortfolioItems'
-import PortfolioModalItems from './PortfolioModalItems'
 import Data from '../../Stores/portfolio'
 
 class Portfolio extends Component {
@@ -10,15 +9,12 @@ class Portfolio extends Component {
                 <div className="row">
                     <div className="twelve columns collapsed">
 
-                        <h1>Portfolio</h1>
+                        <h1>Art Portfolio</h1>
 
                         <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
                             <PortfolioItems data={Data} />
                         </div>
                     </div>
-
-                    <PortfolioModalItems data={Data} />
-
                 </div>
             </section>
         );
