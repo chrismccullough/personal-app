@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-scroll'
 import Social from '../Social/Social'
 
 class Copyright extends Component {
@@ -27,7 +28,17 @@ class Footer extends Component {
                         </ul>
                     </div>
 
-                    <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+                    <div id="go-top">
+                        <Link
+                            to={"about"}
+                            smooth={true}
+                            offset={0}
+                            duration={1000}
+                            delay={500}
+                        >
+                            <i class="icon-up-open"></i>
+                        </Link>
+                    </div>
                 </div>
             </footer>
         );
