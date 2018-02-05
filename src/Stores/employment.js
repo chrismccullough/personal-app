@@ -3,6 +3,9 @@ const workData = [
         Company: 'Nordstrom',
         Website: 'http://www.nordstrom.com',
         Location: 'Seattle, WA',
+        Notables: [
+            { Notable: 'Site migration from PHP/MySQL to Sproutcore/CouchDB' }
+        ],
         Roles: [
             {
                 Title: 'Sr. Software Engineer',
