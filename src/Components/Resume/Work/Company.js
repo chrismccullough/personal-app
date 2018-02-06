@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Notables from './Notables'
 import Role from './Role'
 
 class Company extends Component {
@@ -14,10 +15,19 @@ class Company extends Component {
                             <span>{this.props.Location}</span>
                         </li>
                     </ul>
+
+                    <Notables Notables={this.props.Notables} />
+
                     <p className="roles">
                         {
                             this.props.Roles.map((role, index) =>
-                               <Role key={index} Title={role.Title} StartDate={role.StartDate} EndDate={role.EndDate} Responsibilities={role.Responsibilities} />
+                               <Role
+                                    key={index}
+                                    Title={role.Title}
+                                    StartDate={role.StartDate}
+                                    EndDate={role.EndDate}
+                                    Responsibilities={role.Responsibilities}
+                                />
                             )
                         }
                     </p>

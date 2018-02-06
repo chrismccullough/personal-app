@@ -9,7 +9,14 @@ class Companies extends Component {
                 {
                     this.props.Companies.map((company, index) => {
                         return (
-                             <Company key={index} Company={ company.Company } Website={company.Website} Location={company.Location} Roles={company.Roles} />
+                             <Company
+                                key={index}
+                                Company={ company.Company }
+                                Website={company.Website}
+                                Location={company.Location}
+                                Notables={company.Notables}
+                                Roles={company.Roles}
+                            />
                          )
                      })
                 }

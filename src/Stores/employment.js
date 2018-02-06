@@ -3,6 +3,24 @@ const workData = [
         Company: 'Nordstrom',
         Website: 'http://www.nordstrom.com',
         Location: 'Seattle, WA',
+        Notables: [
+            {
+                Title: "Nordstrom.com ADA Compliance Changes and Best Practices",
+                Description: "Working with a third-party consulting firm, elements of ADA non-compliance were identified throughout the nordstrom.com website that would adversely affect the shopping and purchasing experience for some of our users. I defined mitigation steps and created Jira stories into the backlogs of teams throughout the Nordstrom engineering organization and collaborated with each of them to get the work prioritized on their backlogs and implemented on the site. During the course of this extended project, I also worked worked with the engineering teams to integrate ADA consideration into their engineering and quality assurance lifecycles (unit testing, code reviews, test automation), etc.."
+            },
+            {
+                Title: "Nordstrom Interviewing and Hiring Process",
+                Description: "I collaborated with the Nordstrom recruiting and HR teams to redefine our technical interview and hiring processes. Working with a small number of handpicked engineers, we defined the required competencies and skills required,   updated an existing online technical checklist that streamlined the quality and efficiency of our phone screen process. I designed a series of code challenges that could be completed by a prospective applicant using CodePen. The applicant was provided was a set of written requirements and had to design and code a fully functioning elevator panel using HTML, JavaScript and CSS as if they were standing inside the elevator car. The applicants had to provide buttons that could access at least four floors, display buttons that would indicate what floor had been selected, provide a display panel that indicates the current floor and updates as the car moves between floors, and indicates the up/down direction of the elevator car. Based on the recommendations from the phone screen and an initial review of the code challenge, we could decide to conduct an in-person interview with the candidate. During the in-person interview the interviewers could use several pre-defined questions to hone in on the candidates development philosophies, mindset and acumen. Using this process, we made the interview process and ultimate hiring decision significantly more efficient and accurate. This increased engineers' ability to contribute to the interview process with less disruption to their other responsibilities and elevated the quality of engineers that were brought on the Nordstrom engineering team."
+            },
+            {
+                Title: "Nordstrom.com Product Page Migration",
+                Description: "Architected and implemented a newer more robust technology platform for the Nordstrom product page. Leading a team of 15+ front-end and back-end engineers, the data structures, APIs, application and front-end tiers were implemented in less than four months. Customer traffic was migrated to the new platform incrementally over the course of two weeks while demand and conversion rates were analyzed. Once the migration was complete the product page was delivering an additional $270,000 in demand per day."
+            },
+            {
+                Title: "Nordstrom Fashion Week Landing Page",
+                Description: "I took over the design and development of this project after the project had fallen behind schedule and the previous engineer had left the company. With little time before the beginning of Fashion Week, I designed a JSON data structure consumed by a module-based landing page that was hosted on WordPress. Working with another engineer, we developed an JavaScript-based authoring tool that allowed Nordstrom copy curators to quickly update the content on the Nordstrom Fashion Week."
+            }
+        ],
         Roles: [
             {
                 Title: 'Sr. Software Engineer',
@@ -62,6 +80,12 @@ const workData = [
         Company: 'Livemocha',
         Website: 'http://www.livemocha.com',
         Location: 'Seattle, WA',
+        Notables: [
+            {
+                Title: "Site Migration",
+                Description: "I collaborated with a team of engineers to redesign the livemocha.com website using SproutCore while supporting the existing PHP site."
+            }
+        ],
         Roles: [
             {
                 Title: 'Lead Web Developer',
@@ -81,6 +105,20 @@ const workData = [
         Company: 'Infospace',
         Website: 'http://www.infospace.com',
         Location: 'Bellevue, WA',
+        Notables: [
+            {
+                Title: "Infospace Broadband Media Center",
+                Description: "I architected and implemented a broadband media center application and worked with another engineer to design the data endpoints that it would consume. The video streaming application aggregated content from multiple sources and would utilize multiple video player instances to stream content allowing one instance to play content while another instance was simultaneously buffering the next piece of content and would then swap roles, providing a seamless streaming experience that was compatible with Windows Media Player and RealNetworks RealPlayer."
+            },
+            {
+                Title: "Infospace Private Label Site Platform Migration",
+                Description: "I scoped and led the migration of 500+ private label sites (cobrands) from a proprietary platform to new software and platform technologies based on ASP.net and MVC. I directly managed teams in Bellevue, London and India to plan and execute the migration of Infospace's partner sites with no breakage in backward compatibility."
+            },
+            {
+                Title: "Performance Improvements to the Infospace Portal",
+                Description: "In order to satisfy the requests of an important portal customer, the load time of the Infospace user-personalized portal needed to be significantly improved. Leveraging current technology enhancements in HTML, JavaScript, CSS and browsers, I re-wrote the portals, underlying content module framework and content APIs to improve performance and functionality without breaking backward-compatibility to existing consumers. I refactored code to be cleaner, more modular and reusable. I removed nested table structures and separated the concerns of functionality and layout using HTML, JavaScript and CSS. I utilized existing tools and developed some of my own, using C#, to automate browser testing and to analyze browser load times and server response times. I designed and built online dashboards that could be used by the engineering and business teams to monitor the health and performance of the applications and physical hardware."
+            },
+        ],
         Roles: [
             {
                 Title: 'Development Manager',
