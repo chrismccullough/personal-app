@@ -24,8 +24,8 @@ const skillsData = [
     {
         Title: 'JavaScript Frameworks & Libraries',
         Skills: [
-            { Skill: "ReactJS", Percentage: 80 },
-            { Skill: "AngularJS", Percentage: 75 },
+            { Skill: "ReactJS", Percentage: 75 },
+            { Skill: "AngularJS", Percentage: 60 },
             { Skill: "Sproutcore", Percentage: 60 },
             { Skill: "jQuery", Percentage: 85}
         ]
