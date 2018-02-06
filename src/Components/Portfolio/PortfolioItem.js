@@ -1,6 +1,20 @@
 import React, { Component } from 'react'
 import Lightbox from "react-image-lightbox"
 
+class Tag extends Component {
+    render() {
+        let numTags = this.props.numTags;
+        let index = this.props.index;
+        let tag = this.props.tag;
+
+        if ( index < numTags -1 ) {
+            return <span key={ index } className="tag">{ tag }, </span>
+        } else {
+            return <span key={ index } className="tag">{ tag }</span>
+        }
+    }
+}
+
 class PortfolioItem extends Component {
     constructor(props) {
         super(props);
@@ -12,6 +26,7 @@ class PortfolioItem extends Component {
 
     render() {
         const { isOpen } = this.state;
+        const numTags = this.props.tags.length;
         return (
             <div class="columns portfolio-item">
                 <div class="item-wrap">
@@ -22,11 +37,12 @@ class PortfolioItem extends Component {
                             <div class="portfolio-item-meta">
                                 <h5>{this.props.title}</h5>
                                 <p className="tags">
-                                    <i class="fa fa-tag"></i>&nbsp;
+                                    <i class="fa fa-tag tag-icon"></i>
                                     {
                                         this.props.tags.map((tag, index) => {
                                                 return (
-                                                    <span key={index} className="tag">{ tag.tag }&nbsp;</span>
+                                                    <Tag index={index} numTags={numTags} tag={tag.tag} />
+
                                                 )
                                          })
                                     }

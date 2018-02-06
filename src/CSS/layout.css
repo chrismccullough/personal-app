@@ -662,7 +662,13 @@ ul#nav li a.active { color: #F06000; }
    color: #c6c7c7;
    margin-bottom: 0;
 }
+.portfolio-item .tag-icon {
+    margin-right: 10px;
+}
 
+.portfolio-item .tag {
+    text-transform: capitalize;
+}
 /* on hover */
 .portfolio-item:hover .overlay {
 	opacity: 1;
@@ -674,7 +680,6 @@ ul#nav li a.active { color: #F06000; }
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
 }
-
 /* popup modal */
 .popup-modal {
 	max-width: 550px;
