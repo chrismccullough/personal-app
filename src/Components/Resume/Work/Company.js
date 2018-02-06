@@ -1,15 +1,8 @@
 import React, { Component } from 'react'
+import Notables from './Notables'
 import Role from './Role'
 
-const notables = [
-    'Develped an on-demand gaming site that incorporated user accounts, billing and digital content',
-    'Architected and built Speed to Market tool to automate the creation of new private label sites'
-];
-
 class Company extends Component {
-
-
-
     render() {
         return (
             <div className="row item">
@@ -23,12 +16,7 @@ class Company extends Component {
                         </li>
                     </ul>
 
-                    <p className="notables">
-                        <h4>Notable Accomplishments</h4>
-                        <ul>
-                            <li>Foo</li>
-                        </ul>
-                    </p>
+                    <Notables Notables={this.props.Notables} />
 
                     <p className="roles">
                         {
