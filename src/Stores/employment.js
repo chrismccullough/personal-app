@@ -5,11 +5,11 @@ const workData = [
         Location: 'Seattle, WA',
         Notables: [
             {
-                Title: "Nordstrom.com ADA Compliance Changes and Best Practices",
+                Title: "Nordstrom.com ADA Compliance Updates and Best Practices",
                 Description: "Working with a third-party consulting firm, elements of ADA non-compliance were identified throughout the nordstrom.com website that would adversely affect the shopping and purchasing experience for some of our users. I defined mitigation steps and created Jira stories into the backlogs of teams throughout the Nordstrom engineering organization and collaborated with each of them to get the work prioritized on their backlogs and implemented on the site. During the course of this extended project, I also worked worked with the engineering teams to integrate ADA consideration into their engineering and quality assurance lifecycles (unit testing, code reviews, test automation), etc.."
             },
             {
-                Title: "Nordstrom Interviewing and Hiring Process",
+                Title: "Nordstrom Interviewing and Hiring Process Updates",
                 Description: "I collaborated with the Nordstrom recruiting and HR teams to redefine our technical interview and hiring processes. Working with a small number of handpicked engineers, we defined the required competencies and skills required,   updated an existing online technical checklist that streamlined the quality and efficiency of our phone screen process. I designed a series of code challenges that could be completed by a prospective applicant using CodePen. The applicant was provided was a set of written requirements and had to design and code a fully functioning elevator panel using HTML, JavaScript and CSS as if they were standing inside the elevator car. The applicants had to provide buttons that could access at least four floors, display buttons that would indicate what floor had been selected, provide a display panel that indicates the current floor and updates as the car moves between floors, and indicates the up/down direction of the elevator car. Based on the recommendations from the phone screen and an initial review of the code challenge, we could decide to conduct an in-person interview with the candidate. During the in-person interview the interviewers could use several pre-defined questions to hone in on the candidates development philosophies, mindset and acumen. Using this process, we made the interview process and ultimate hiring decision significantly more efficient and accurate. This increased engineers' ability to contribute to the interview process with less disruption to their other responsibilities and elevated the quality of engineers that were brought on the Nordstrom engineering team."
             },
             {
@@ -82,7 +82,7 @@ const workData = [
         Location: 'Seattle, WA',
         Notables: [
             {
-                Title: "Site Migration",
+                Title: "Full Site Migration",
                 Description: "I collaborated with a team of engineers to redesign the livemocha.com website using SproutCore while supporting the existing PHP site."
             }
         ],
