@@ -6,8 +6,8 @@ class Company extends Component {
     render() {
         return (
             <div className="row item">
-                <div className="twelve columns company">
-                    <ul className="stats-tabs">
+                <div className="twelve columns">
+                    <ul className="company stats-tabs">
                         <li>
                             <h3><a href={this.props.Website} target="_blank">{this.props.Company}</a></h3>
                         </li>

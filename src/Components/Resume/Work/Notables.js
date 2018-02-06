@@ -23,13 +23,13 @@ class Notables extends Component {
             closeIcon: 'notablesCloseIcon'
         }
         return (
-            <div className="notables">
+            <p className="notables">
                 <button onClick={this.onOpenModal}>
                     <i className="icon-down-circle"></i> Show notable accomplishments
                 </button>
 
                 <Modal open={open} onClose={this.onCloseModal} classNames={modalConfig}>
-                    <h2><span>Notable Accomplishments</span></h2>
+                    <h2>Notable Accomplishments</h2>
                     {
                         this.props.Notables.map((notable, index) =>
                             <p key={index} className="notable">
@@ -40,7 +40,7 @@ class Notables extends Component {
                         )
                     }
                 </Modal>
-            </div>
+            </p>
         )
     }
 }

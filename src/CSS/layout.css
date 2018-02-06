@@ -249,6 +249,17 @@ ul#nav li a.active { color: #F06000; }
 }
 #resume a, #resume a:visited  { color: #11ABB0; }
 #resume a:hover, #resume a:focus { color: #313131; }
+#resume button {
+    background: #CCC;
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0 10px;
+}
+#resume button:active,
+#resume button:hover {
+    background: #838C95;
+}
 #resume .stats-tabs {
     margin: 0;
 }
@@ -280,33 +291,29 @@ ul#nav li a.active { color: #F06000; }
 #resume .skills {
     margin-bottom: 48px;
 }
+#resume .company {
+    border-bottom: 1px dotted #E3E3E3;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
 #resume .work h5,
 #resume .education h5,
 #resume .volunteer h5 {
     display: inline-block;
 }
-#resume button {
-    font-size: smaller;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.notablesModal {
-    padding: 4rem !important;
-}
-.notablesModal h2 {
-    border-bottom: 3px solid #11ABB0;
+#resume .companies .notables {
     margin-bottom: 20px;
-    padding-bottom: 6px;
 }
-.notablesModal h4 {
-    color: #11ABB0;
+#resume .companies .notables button {
+    background: #FFF;
+    border: 1px solid #838C95;
+    color: #444;
 }
-.notablesModal p {
-    border-bottom: 1px bottom #E3E3E3;
-    margin-bottom: 30px;
-}
-#resume .roles {
-    margin-bottom: 25px;
+#resume .companies .notables button:hover,
+#resume .companies .notables button:active {
+    background: #838C95;
+    border: 1px solid #838C95;
+    color: #FFF;
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
@@ -325,6 +332,21 @@ ul#nav li a.active { color: #F06000; }
 }
 #resume .education .school {
     padding-bottom: 12px;
+}
+.notablesModal {
+    padding: 4rem !important;
+}
+.notablesModal h2 {
+    border-bottom: 3px solid #11ABB0;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+}
+.notablesModal h4 {
+    color: #11ABB0;
+}
+.notablesModal p {
+    border-bottom: 1px bottom #E3E3E3;
+    margin-bottom: 30px;
 }
 
 /*----------------------------------------------*/
