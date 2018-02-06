@@ -1,43 +1,45 @@
 import React, { Component } from 'react'
+import Modal from 'react-responsive-modal'
 
 class Notables extends Component {
-    constructor () {
-        super()
-        this.state = {
-            isNotablesHidden: true
-        }
-    }
 
-    toggleNotablesHidden () {
-        this.setState({
-            isNotablesHidden: !this.state.isNotablesHidden
-        })
-    }
+    state = {
+        open: false,
+    };
+
+    onOpenModal = () => {
+        this.setState({ open: true });
+    };
+
+    onCloseModal = () => {
+        this.setState({ open: false });
+    };
 
     render() {
-        const notables = this.props.Notables;
+        const { open } = this.state;
+        const modalConfig = {
+            overlay: 'notablesOverlay',
+            modal: 'notablesModal',
+            closeIcon: 'notablesCloseIcon'
+        }
         return (
-            <div>
-                {this.state.isNotablesHidden && (
-                    <a onClick={this.toggleNotablesHidden.bind(this)}>Show notable accomplishments</a>
-                )}
+            <div className="notables">
+                <button onClick={this.onOpenModal}>
+                    <i className="icon-down-circle"></i> Show notable accomplishments
+                </button>
 
-                {!this.state.isNotablesHidden && (
-                    <div>
-                        <a onClick={this.toggleNotablesHidden.bind(this)}>Hide notable accomplishments</a>
-                        <p className="notables">
-                            <h6>Notable Accomplishments</h6>
-                            {
-                                this.props.Notables.map((notable, index) =>
-                                    <p key={index} className="notable">
-                                        <em>{notable.Title}</em><br/>
-                                        {notable.Description}
-                                    </p>
-                                )
-                            }
-                        </p>
-                    </div>
-                )}
+                <Modal open={open} onClose={this.onCloseModal} classNames={modalConfig}>
+                    <h2><span>Notable Accomplishments</span></h2>
+                    {
+                        this.props.Notables.map((notable, index) =>
+                            <p key={index} className="notable">
+                                <h4>{notable.Title}</h4>
+                                {notable.Description}
+                                <hr />
+                            </p>
+                        )
+                    }
+                </Modal>
             </div>
         )
     }
