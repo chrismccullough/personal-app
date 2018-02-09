@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Loader from '../../../Images/loader.gif'
 
 class Form extends Component {
+
     render() {
         return (
             <div>
