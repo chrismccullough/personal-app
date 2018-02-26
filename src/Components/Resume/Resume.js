@@ -1,21 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-import Work from './Work/Work'
-import Skills from './Skills/Skills'
-import Volunteer from './Volunteer/Volunteer'
-import Education from './Education/Education'
+import Work from './Work/Work';
+import Skills from './Skills/Skills';
+import Volunteer from './Volunteer/Volunteer';
+import Education from './Education/Education';
 
-class Resume extends Component {
-    render() {
-        return (
-            <section id="resume">
-                <Work />
-                <Skills />
-                <Education />
-                <Volunteer />
-            </section>
-        );
-    }
-}
+const resume = () => (
+    <section id="resume">
+        <Work />
+        <Skills />
+        <Education />
+        <Volunteer />
+    </section>
+);
 
-export default Resume;
+export default resume;

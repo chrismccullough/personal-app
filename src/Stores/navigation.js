@@ -16,17 +16,16 @@ const navData = [
         id: 4,
         Section: 'portfolio'
     },
-    
+
     {
         id: 5,
         Section: 'testimonials'
-    }
-    /*
+    },
     {
         id: 6,
         Section: 'contact'
     }
-    */
+
 ];
 
 module.exports = navData;

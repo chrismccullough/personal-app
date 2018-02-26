@@ -1,20 +1,25 @@
-import React, { Component } from 'react'
-import VolunteerItem from './VolunteerItem'
+import React from 'react';
+import VolunteerItem from './VolunteerItem';
 
-class VolunteerList extends Component {
-    render() {
-         return (
-             <p className="volunteerList">
-                 {
-                     this.props.data.map((volunteerNode, index) => {
-                          return (
-                              <VolunteerItem key={index} Organization={ volunteerNode.Organization } Website={ volunteerNode.Website } Group={ volunteerNode.Group } Title={ volunteerNode.Title } Location={ volunteerNode.Location } StartDate={ volunteerNode.StartDate } EndDate={ volunteerNode.EndDate } Responsibilities={ volunteerNode.Responsibilities } />
-                          )
-                      })
-                 }
-             </p>
-         )
-     }
-}
+const volunteerList = (props) => (
+    <div className="volunteerList">
+        {
+            props.data.map((volunteerNode, index) => {
+                 return (
+                     <VolunteerItem
+                         key={index}
+                         organization={ volunteerNode.Organization }
+                         website={ volunteerNode.Website }
+                         group={ volunteerNode.Group }
+                         title={ volunteerNode.Title }
+                         location={ volunteerNode.Location }
+                         startDate={ volunteerNode.StartDate }
+                         endDate={ volunteerNode.EndDate }
+                         responsibilities={ volunteerNode.Responsibilities } />
+                 )
+             })
+        }
+    </div>
+);
 
-export default VolunteerList;
+export default volunteerList;

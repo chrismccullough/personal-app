@@ -1,21 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Testimonial extends Component {
+const testimonial = (props) => (
+    <blockquote>
+        <p>
+            {props.Testimonial}
+        </p>
+        <cite>
+            {props.Name} <span>&bull;</span> {props.Title}
+        </cite>
+    </blockquote>
+);
 
-    render() {
-        return (
-            <li>
-                <blockquote>
-                    <p>
-                        {this.props.Testimonial}
-                    </p>
-                    <cite>
-                        {this.props.Name} <span>&bull;</span> {this.props.Title}
-                    </cite>
-                </blockquote>
-            </li>
-        );
-    }
-}
-
-export default Testimonial;
+export default testimonial;

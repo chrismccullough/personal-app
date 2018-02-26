@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Lightbox from "react-image-lightbox"
+import React, { Component } from 'react';
+import Lightbox from "react-image-lightbox";
 
 class Tag extends Component {
     render() {
@@ -7,41 +7,40 @@ class Tag extends Component {
         let index = this.props.index;
         let tag = this.props.tag;
 
-        if ( index < numTags -1 ) {
-            return <span key={ index } className="tag">{ tag }, </span>
-        } else {
-            return <span key={ index } className="tag">{ tag }</span>
-        }
+        return (
+            <span key={ index } className="tag">
+                { index === 0 ? <i className="fa fa-tag tag-icon" /> : '' }
+                { tag }{ index < numTags -1 ? ', ' : '' }
+            </span>
+        );
     }
 }
 
 class PortfolioItem extends Component {
-    constructor(props) {
-        super(props);
+    state = { isPortfolioModalOpen: false };
 
-        this.state = {
-            isOpen: false
-        };
-    }
+    togglePortfolioModalHandler = () => {
+        const isPortfolioModalOpen = this.state.isPortfolioModalOpen;
+        this.setState({ isPortfolioModalOpen: !isPortfolioModalOpen });
+    };
 
     render() {
-        const { isOpen } = this.state;
+        const { isPortfolioModalOpen } = this.state;
         const numTags = this.props.tags.length;
         return (
-            <div class="columns portfolio-item">
-                <div class="item-wrap">
+            <div className="columns portfolio-item">
+                <div className="item-wrap">
 
-                    <a href="javascript:void(0)" title={this.props.title} onClick={() => this.setState({ isOpen: true })}>
+                    <a href="javascript:void(0)" title={this.props.title} onClick={this.togglePortfolioModalHandler}>
                         <img alt="" src={require("../../Images/portfolio/thumbnails/" + this.props.thumbnail)} />
-                        <div class="overlay">
-                            <div class="portfolio-item-meta">
+                        <div className="overlay">
+                            <div className="portfolio-item-meta">
                                 <h5>{this.props.title}</h5>
                                 <p className="tags">
-                                    <i class="fa fa-tag tag-icon"></i>
                                     {
                                         this.props.tags.map((tag, index) => {
                                                 return (
-                                                    <Tag index={index} numTags={numTags} tag={tag.tag} />
+                                                    <Tag key={index} index={index} numTags={numTags} tag={tag.tag} />
 
                                                 )
                                          })
@@ -49,17 +48,17 @@ class PortfolioItem extends Component {
                                 </p>
                             </div>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
+                        <div className="link-icon"><i className="icon-plus"></i></div>
                     </a>
 
 
-                    {isOpen && (
+                    {isPortfolioModalOpen && (
                         <Lightbox
                             discourageDownloads={true}
                             mainSrc={require("../../Images/portfolio/fullsize/" + this.props.thumbnail)}
                             imageTitle={[this.props.title]}
                             imageCaption={[this.props.description]}
-                            onCloseRequest={() => this.setState({ isOpen: false })}
+                            onCloseRequest={this.togglePortfolioModalHandler}
                         />
                     )}
 
