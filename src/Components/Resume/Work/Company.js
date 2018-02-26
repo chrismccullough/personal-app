@@ -1,40 +1,36 @@
-import React, { Component } from 'react'
-import Notables from './Notables'
-import Role from './Role'
+import React from 'react';
+import Notables from './Notables';
+import Role from './Role';
 
-class Company extends Component {
-    render() {
-        return (
-            <div className="row item">
-                <div className="twelve columns">
-                    <ul className="company stats-tabs">
-                        <li>
-                            <h3><a href={this.props.Website} target="_blank">{this.props.Company}</a></h3>
-                        </li>
-                        <li>
-                            <span>{this.props.Location}</span>
-                        </li>
-                    </ul>
+const company = (props) => (
+    <div className="row item">
+        <div className="twelve columns">
+            <ul className="company stats-tabs">
+                <li>
+                    <h3><a href={props.website} target="_blank">{props.company}</a></h3>
+                </li>
+                <li>
+                    <span>{props.location}</span>
+                </li>
+            </ul>
 
-                    <Notables Notables={this.props.Notables} />
+            <Notables notables={props.notables} />
 
-                    <p className="roles">
-                        {
-                            this.props.Roles.map((role, index) =>
-                               <Role
-                                    key={index}
-                                    Title={role.Title}
-                                    StartDate={role.StartDate}
-                                    EndDate={role.EndDate}
-                                    Responsibilities={role.Responsibilities}
-                                />
-                            )
-                        }
-                    </p>
-                </div>
+            <div className="roles">
+                {
+                    props.roles.map((role, index) =>
+                       <Role
+                            key={index}
+                            title={role.Title}
+                            startDate={role.StartDate}
+                            endDate={role.EndDate}
+                            responsibilities={role.Responsibilities}
+                        />
+                    )
+                }
             </div>
-        );
-    }
-}
+        </div>
+    </div>
+);
 
-export default Company;
+export default company;

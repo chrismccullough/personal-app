@@ -1,28 +1,22 @@
-import React, { Component } from 'react'
-import Company from './Company'
+import React from 'react';
+import Company from './Company';
 
-class Companies extends Component {
+const companies = (props) => (
+    <div className="companies">
+       {
+           props.Companies.map((company, index) => {
+               return (
+                    <Company
+                       key={index}
+                       company={ company.Company }
+                       website={company.Website}
+                       location={company.Location}
+                       notables={company.Notables}
+                       roles={company.Roles} />
+                )
+            })
+       }
+   </div>
+);
 
-    render() {
-         return (
-             <div className="companies">
-                {
-                    this.props.Companies.map((company, index) => {
-                        return (
-                             <Company
-                                key={index}
-                                Company={ company.Company }
-                                Website={company.Website}
-                                Location={company.Location}
-                                Notables={company.Notables}
-                                Roles={company.Roles}
-                            />
-                         )
-                     })
-                }
-            </div>
-         )
-     }
-}
-
-export default Companies;
+export default companies;
