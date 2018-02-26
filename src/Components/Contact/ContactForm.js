@@ -1,33 +1,29 @@
-import React, { Component } from 'react'
-import Form from './Form/Form'
-import Aside from './Aside/Aside'
+import React from 'react';
+import Form from './Form/Form';
+import Aside from './Aside/Aside';
 
-class Contact extends Component {
-    render() {
-        return (
-            <section id="contact">
-                <div class="row section-head">
-                    <div class="two columns header-col">
-                        <h1><span>Get In Touch.</span></h1>
-                    </div>
+const contact = () => (
+    <section id="contact">
+        <div className="row section-head">
+            <div className="two columns header-col">
+                <h1><span>Get In Touch.</span></h1>
+            </div>
 
-                    <div class="ten columns">
-                        <p class="lead">Fill out the following form to contact me directly.</p>
-                    </div>
-                </div>
+            <div className="ten columns">
+                <p className="lead">Fill out the following form to contact me directly.</p>
+            </div>
+        </div>
 
-                <div class="row">
-                    <div class="eight columns">
-                        <Form />
-                    </div>
+        <div className="row">
+            <div className="eight columns">
+                <Form />
+            </div>
 
-                    <aside class="four columns footer-widgets">
-                        <Aside />
-                    </aside>
-                </div>
-            </section>
-        );
-    }
-}
+            <aside className="four columns footer-widgets">
+                <Aside />
+            </aside>
+        </div>
+    </section>
+);
 
-export default Contact;
+export default contact;

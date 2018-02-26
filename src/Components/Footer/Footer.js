@@ -4,12 +4,12 @@ import Social from '../Social/Social';
 
 const footer = () => (
     <footer>
-        <div class="row">
-            <div class="twelve columns">
+        <div className="row">
+            <div className="twelve columns">
 
                 <Social />
 
-                <ul class="copyright">
+                <ul className="copyright">
                     <li><span>&copy; Copyright {(new Date().getFullYear())} Chris McCullough</span></li>
                     <li>
                         This site is developed in React by Chris McCullough using the original design of the Ceevee template from
@@ -26,7 +26,7 @@ const footer = () => (
                     duration={1000}
                     delay={500}
                 >
-                    <i class="icon-up-open"></i>
+                    <i className="icon-up-open"></i>
                 </Link>
             </div>
         </div>

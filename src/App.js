@@ -9,7 +9,7 @@ import About from './Components/About/About';
 import Resume from './Components/Resume/Resume';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Testimonials from './Components/Testimonials/Testimonials';
-import ContactForm from './Components/Contact/ContactForm';
+//import ContactForm from './Components/Contact/ContactForm';
 import Footer from './Components/Footer/Footer';
 
 import './App.css';
@@ -29,7 +29,6 @@ const app = () => (
         <Resume />
         <Portfolio />
         <Testimonials />
-        <ContactForm />
         <Footer />
     </div>
 );
