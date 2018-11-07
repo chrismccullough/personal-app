@@ -1,5 +1,38 @@
 const workData = [
     {
+        Company: 'Microsoft (via HCL America)',
+        Website: 'http://www.microsoft.com',
+        Location: 'Redmond, WA',
+        Notables: [
+            {
+                Title: "RDX Demo Hub",
+                Description: "Maintained and updated the demo hub for the retail demo experience. The RDX is an interactive application that runs on a device while on a retail store shelf to illustrate the capabilities of Windows and the device."
+            },
+            {
+                Title: "Digital Fact Tag",
+                Description: "I architected and developed the digital fact tag from scratch.  The DFT is displayed adjacent to the demo hub and provides pricing and specifications for a particular device."
+            },
+            {
+                Title: "Device Comparison Page",
+                Description: "I architected and developed the comparison page from scratch.  It is reached via the digital fact tag and compares the current device to similar devices relative to price and specifications."
+            }
+        ],
+        Roles: [
+            {
+                Title: 'Technical Architect Frontend',
+                StartDate: 'April 2018',
+                EndDate: 'October 2018',
+                Responsibilities: [
+                    { Responsibility: 'Architectural design' },
+                    { Responsibility: 'Feature prototyping' },
+                    { Responsibility: 'Front End Development' },
+                    { Responsibility: 'Code review support' }
+                ]
+            }
+        ]
+    },
+
+    {
         Company: 'Nordstrom',
         Website: 'http://www.nordstrom.com',
         Location: 'Seattle, WA',
